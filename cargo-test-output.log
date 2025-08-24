@@ -1,0 +1,855 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.83s
+     Running unittests src/lib.rs (target/debug/deps/cargo_semver_checks-120967bb10466484)
+
+running 224 tests
+test check_release::test::classify_build_with_pre_same ... ok
+test check_release::test::classify_build_zero_version ... ok
+test check_release::test::classify_double_zerover_major_changed ... ok
+test check_release::test::classify_ignores_build ... ok
+test check_release::test::classify_major_changed ... ok
+test check_release::test::classify_minor_changed ... ok
+test check_release::test::classify_minor_changed_with_pre ... ok
+test check_release::test::classify_patch_changed ... ok
+test check_release::test::classify_pre ... ok
+test check_release::test::classify_pre_same ... ok
+test check_release::test::classify_pre_zero_same ... ok
+test check_release::test::classify_same_version ... ok
+test check_release::test::classify_same_version_with_pre ... ok
+test check_release::test::classify_zerover_major_changed ... ok
+test check_release::test::classify_zerover_minor_changed ... ok
+test check_release::test::classify_zerover_same_version ... ok
+test check_release::test::classify_zerover_zero_same_version ... ok
+test config::tests::stable_flags_always_enabled ... ok
+test config::tests::test_get_color_choice ... ok
+test config::tests::test_log_level_debug ... ok
+test config::tests::test_log_level_info ... ok
+test config::tests::test_log_level_none ... ok
+test config::tests::test_log_level_trace ... ok
+test config::tests::test_set_color_choice ... ok
+test config::tests::test_set_err_color_choice ... ok
+test config::tests::test_set_global_color_choice ... ok
+test config::tests::test_set_out_color_choice ... ok
+test manifest::tests::entry_with_no_fields_is_error ... ok
+test manifest::tests::test_deserialize_config ... ok
+test manifest::tests::workspace_key_false_is_error ... ok
+test manifest::tests::workspace_key_omitted_is_false ... ok
+test query::tests::all_queries_are_valid ... ok
+test query::tests::pub_use_handling ... ok
+test query::tests::test_data_is_fresh ... ok
+test query::tests::test_inherited_value_deserialization ... ok
+test query::tests::test_override_precedence ... ok
+test query::tests::test_overrides ... ok
+test query::tests_lints::all_lint_files_are_used_in_add_lints ... ok
+test query::tests_lints::attribute_proc_macro_missing ... ok
+test query::tests_lints::auto_trait_impl_removed ... ok
+test query::tests_lints::constructible_struct_adds_field ... ok
+test query::tests_lints::constructible_struct_adds_private_field ... ok
+test query::tests_lints::constructible_struct_changed_type ... ok
+test query::tests_lints::declarative_macro_missing ... ok
+test query::tests_lints::derive_helper_attr_removed ... ok
+test query::tests_lints::derive_proc_macro_missing ... ok
+test query::tests_lints::derive_trait_impl_removed ... ok
+test query::tests_lints::enum_discriminants_undefined_non_exhaustive_variant ... ok
+test query::tests_lints::enum_discriminants_undefined_non_unit_variant ... ok
+test query::tests_lints::enum_marked_non_exhaustive ... ok
+test query::tests_lints::enum_missing ... ok
+test query::tests_lints::enum_must_use_added ... ok
+test query::tests_lints::enum_must_use_removed ... ok
+test query::tests_lints::enum_no_longer_non_exhaustive ... ok
+test query::tests_lints::enum_no_repr_variant_discriminant_changed ... ok
+test query::tests_lints::enum_non_exhaustive_struct_variant_field_added ... ok
+test query::tests_lints::enum_non_exhaustive_tuple_variant_changed_kind ... ok
+test query::tests_lints::enum_non_exhaustive_tuple_variant_field_added ... ok
+test query::tests_lints::enum_now_doc_hidden ... ok
+test query::tests_lints::enum_repr_int_added ... ok
+test query::tests_lints::enum_repr_int_changed ... ok
+test query::tests_lints::enum_repr_int_removed ... ok
+test query::tests_lints::enum_repr_transparent_removed ... ok
+test query::tests_lints::enum_repr_variant_discriminant_changed ... ok
+test query::tests_lints::enum_struct_variant_changed_kind ... ok
+test query::tests_lints::enum_struct_variant_field_added ... ok
+test query::tests_lints::enum_struct_variant_field_marked_deprecated ... ok
+test query::tests_lints::enum_struct_variant_field_missing ... ok
+test query::tests_lints::enum_struct_variant_field_now_doc_hidden ... ok
+test query::tests_lints::enum_tuple_variant_changed_kind ... ok
+test query::tests_lints::enum_tuple_variant_field_added ... ok
+test query::tests_lints::enum_tuple_variant_field_marked_deprecated ... ok
+test query::tests_lints::enum_tuple_variant_field_missing ... ok
+test query::tests_lints::enum_tuple_variant_field_now_doc_hidden ... ok
+test query::tests_lints::enum_unit_variant_changed_kind ... ok
+test query::tests_lints::enum_variant_added ... ok
+test query::tests_lints::enum_variant_marked_deprecated ... ok
+test query::tests_lints::enum_variant_marked_non_exhaustive ... ok
+test query::tests_lints::enum_variant_missing ... ok
+test query::tests_lints::enum_variant_no_longer_non_exhaustive ... ok
+test query::tests_lints::exhaustive_enum_added ... ok
+test query::tests_lints::exported_function_changed_abi ... ok
+test query::tests_lints::feature_missing ... ok
+test query::tests_lints::feature_not_enabled_by_default ... ok
+test query::tests_lints::function_abi_no_longer_unwind ... ok
+test query::tests_lints::function_abi_now_unwind ... ok
+test query::tests_lints::function_changed_abi ... ok
+test query::tests_lints::function_const_removed ... ok
+test query::tests_lints::function_export_name_changed ... ok
+test query::tests_lints::function_like_proc_macro_missing ... ok
+test query::tests_lints::function_marked_deprecated ... ok
+test query::tests_lints::function_missing ... ok
+test query::tests_lints::function_must_use_added ... ok
+test query::tests_lints::function_no_longer_unsafe ... ok
+test query::tests_lints::function_now_const ... ok
+test query::tests_lints::function_now_doc_hidden ... ok
+test query::tests_lints::function_parameter_count_changed ... ok
+test query::tests_lints::function_requires_different_const_generic_params ... ok
+test query::tests_lints::function_requires_different_generic_type_params ... ok
+test query::tests_lints::function_unsafe_added ... ok
+test query::tests_lints::global_value_marked_deprecated ... ok
+test query::tests_lints::inherent_associated_const_now_doc_hidden ... ok
+test query::tests_lints::inherent_associated_pub_const_missing ... ok
+test query::tests_lints::inherent_method_const_removed ... ok
+test query::tests_lints::inherent_method_missing ... ok
+test query::tests_lints::inherent_method_must_use_added ... ok
+test query::tests_lints::inherent_method_now_doc_hidden ... ok
+test query::tests_lints::inherent_method_unsafe_added ... ok
+test query::tests_lints::macro_marked_deprecated ... ok
+test query::tests_lints::macro_no_longer_exported ... ok
+test query::tests_lints::macro_now_doc_hidden ... ok
+test query::tests_lints::method_parameter_count_changed ... ok
+test query::tests_lints::method_requires_different_const_generic_params ... ok
+test query::tests_lints::method_requires_different_generic_type_params ... ok
+test query::tests_lints::module_missing ... ok
+test query::tests_lints::non_exhaustive_enum_added ... ok
+test query::tests_lints::non_exhaustive_struct_changed_type ... ok
+test query::tests_lints::partial_ord_enum_struct_variant_fields_reordered ... ok
+test query::tests_lints::partial_ord_enum_variants_reordered ... ok
+test query::tests_lints::partial_ord_struct_fields_reordered ... ok
+test query::tests_lints::proc_macro_marked_deprecated ... ok
+test query::tests_lints::proc_macro_now_doc_hidden ... ok
+test query::tests_lints::pub_api_sealed_trait_became_unconditionally_sealed ... ok
+test query::tests_lints::pub_api_sealed_trait_became_unsealed ... ok
+test query::tests_lints::pub_api_sealed_trait_method_target_feature_removed ... ok
+test query::tests_lints::pub_const_added ... ok
+test query::tests_lints::pub_module_level_const_missing ... ok
+test query::tests_lints::pub_module_level_const_now_doc_hidden ... ok
+test query::tests_lints::pub_static_added ... ok
+test query::tests_lints::pub_static_missing ... ok
+test query::tests_lints::pub_static_mut_now_immutable ... ok
+test query::tests_lints::pub_static_now_doc_hidden ... ok
+test query::tests_lints::pub_static_now_mutable ... ok
+test query::tests_lints::repr_c_enum_struct_variant_fields_reordered ... ok
+test query::tests_lints::repr_c_plain_struct_fields_reordered ... ok
+test query::tests_lints::repr_c_removed ... ok
+test query::tests_lints::repr_packed_added ... ok
+test query::tests_lints::repr_packed_removed ... ok
+test query::tests_lints::safe_function_requires_more_target_features ... stored new snapshot /home/ubuntu/cargo-semver-checks/src/../test_outputs/query_execution/safe_function_requires_more_target_features.snap.new
+FAILED
+test query::tests_lints::safe_function_target_feature_added ... stored new snapshot /home/ubuntu/cargo-semver-checks/src/../test_outputs/query_execution/safe_function_target_feature_added.snap.new
+FAILED
+test query::tests_lints::safe_inherent_method_requires_more_target_features ... stored new snapshot /home/ubuntu/cargo-semver-checks/src/../test_outputs/query_execution/safe_inherent_method_requires_more_target_features.snap.new
+FAILED
+test query::tests_lints::safe_inherent_method_target_feature_added ... stored new snapshot /home/ubuntu/cargo-semver-checks/src/../test_outputs/query_execution/safe_inherent_method_target_feature_added.snap.new
+FAILED
+test query::tests_lints::sized_impl_removed ... ok
+test query::tests_lints::static_became_unsafe ... ok
+test query::tests_lints::struct_field_marked_deprecated ... ok
+test query::tests_lints::struct_marked_non_exhaustive ... ok
+test query::tests_lints::struct_missing ... ok
+test query::tests_lints::struct_must_use_added ... ok
+test query::tests_lints::struct_must_use_removed ... ok
+test query::tests_lints::struct_now_doc_hidden ... ok
+test query::tests_lints::struct_pub_field_missing ... ok
+test query::tests_lints::struct_pub_field_now_doc_hidden ... ok
+test query::tests_lints::struct_repr_transparent_removed ... ok
+test query::tests_lints::struct_with_no_pub_fields_changed_type ... ok
+test query::tests_lints::struct_with_pub_fields_changed_type ... ok
+test query::tests_lints::trait_added_supertrait ... ok
+test query::tests_lints::trait_allows_fewer_const_generic_params ... ok
+test query::tests_lints::trait_allows_fewer_generic_type_params ... ok
+test query::tests_lints::trait_associated_const_added ... ok
+test query::tests_lints::trait_associated_const_default_removed ... ok
+test query::tests_lints::trait_associated_const_marked_deprecated ... ok
+test query::tests_lints::trait_associated_const_now_doc_hidden ... ok
+test query::tests_lints::trait_associated_type_added ... ok
+test query::tests_lints::trait_associated_type_default_removed ... ok
+test query::tests_lints::trait_associated_type_marked_deprecated ... ok
+test query::tests_lints::trait_associated_type_now_doc_hidden ... ok
+test query::tests_lints::trait_marked_deprecated ... ok
+test query::tests_lints::trait_method_added ... ok
+test query::tests_lints::trait_method_default_impl_removed ... ok
+test query::tests_lints::trait_method_marked_deprecated ... ok
+test query::tests_lints::trait_method_missing ... ok
+test query::tests_lints::trait_method_now_doc_hidden ... ok
+test query::tests_lints::trait_method_parameter_count_changed ... ok
+test query::tests_lints::trait_method_requires_different_const_generic_params ... ok
+test query::tests_lints::trait_method_requires_different_generic_type_params ... ok
+test query::tests_lints::trait_method_target_feature_removed ... stored new snapshot /home/ubuntu/cargo-semver-checks/src/../test_outputs/query_execution/trait_method_target_feature_removed.snap.new
+FAILED
+test query::tests_lints::trait_method_unsafe_added ... ok
+test query::tests_lints::trait_method_unsafe_removed ... ok
+test query::tests_lints::trait_mismatched_generic_lifetimes ... ok
+test query::tests_lints::trait_missing ... ok
+test query::tests_lints::trait_must_use_added ... ok
+test query::tests_lints::trait_newly_sealed ... ok
+test query::tests_lints::trait_no_longer_dyn_compatible ... ok
+test query::tests_lints::trait_now_doc_hidden ... ok
+test query::tests_lints::trait_removed_associated_constant ... ok
+test query::tests_lints::trait_removed_associated_type ... ok
+test query::tests_lints::trait_removed_supertrait ... ok
+test query::tests_lints::trait_requires_more_const_generic_params ... ok
+test query::tests_lints::trait_requires_more_generic_type_params ... ok
+test query::tests_lints::trait_unsafe_added ... ok
+test query::tests_lints::trait_unsafe_removed ... ok
+test query::tests_lints::tuple_struct_to_plain_struct ... ok
+test query::tests_lints::type_allows_fewer_const_generic_params ... ok
+test query::tests_lints::type_allows_fewer_generic_type_params ... ok
+test query::tests_lints::type_associated_const_marked_deprecated ... ok
+test query::tests_lints::type_marked_deprecated ... ok
+test query::tests_lints::type_method_marked_deprecated ... ok
+test query::tests_lints::type_mismatched_generic_lifetimes ... ok
+test query::tests_lints::type_requires_more_const_generic_params ... ok
+test query::tests_lints::type_requires_more_generic_type_params ... ok
+test query::tests_lints::unconditionally_sealed_trait_became_pub_api_sealed ... ok
+test query::tests_lints::unconditionally_sealed_trait_became_unsealed ... ok
+test query::tests_lints::union_added ... ok
+test query::tests_lints::union_field_added_with_all_pub_fields ... ok
+test query::tests_lints::union_field_added_with_non_pub_fields ... ok
+test query::tests_lints::union_field_missing ... ok
+test query::tests_lints::union_missing ... ok
+test query::tests_lints::union_must_use_added ... ok
+test query::tests_lints::union_now_doc_hidden ... ok
+test query::tests_lints::union_pub_field_now_doc_hidden ... ok
+test query::tests_lints::unit_struct_changed_kind ... ok
+test query::tests_lints::unsafe_function_requires_more_target_features ... stored new snapshot /home/ubuntu/cargo-semver-checks/src/../test_outputs/query_execution/unsafe_function_requires_more_target_features.snap.new
+FAILED
+test query::tests_lints::unsafe_function_target_feature_added ... stored new snapshot /home/ubuntu/cargo-semver-checks/src/../test_outputs/query_execution/unsafe_function_target_feature_added.snap.new
+FAILED
+test query::tests_lints::unsafe_inherent_method_requires_more_target_features ... stored new snapshot /home/ubuntu/cargo-semver-checks/src/../test_outputs/query_execution/unsafe_inherent_method_requires_more_target_features.snap.new
+FAILED
+test query::tests_lints::unsafe_inherent_method_target_feature_added ... stored new snapshot /home/ubuntu/cargo-semver-checks/src/../test_outputs/query_execution/unsafe_inherent_method_target_feature_added.snap.new
+FAILED
+test query::tests_lints::unsafe_trait_method_requires_more_target_features ... stored new snapshot /home/ubuntu/cargo-semver-checks/src/../test_outputs/query_execution/unsafe_trait_method_requires_more_target_features.snap.new
+FAILED
+test query::tests_lints::unsafe_trait_method_target_feature_added ... stored new snapshot /home/ubuntu/cargo-semver-checks/src/../test_outputs/query_execution/unsafe_trait_method_target_feature_added.snap.new
+FAILED
+test rustdoc_gen::tests::baseline_choosing_logic_picks_pre_release_if_there_is_no_normal ... ok
+test rustdoc_gen::tests::baseline_choosing_logic_picks_yanked_if_there_is_no_normal ... ok
+test rustdoc_gen::tests::baseline_choosing_logic_skips_greater_than_current ... ok
+test rustdoc_gen::tests::baseline_choosing_logic_skips_pre_releases ... ok
+test rustdoc_gen::tests::baseline_choosing_logic_skips_yanked ... ok
+test rustdoc_gen::tests::baseline_choosing_logic_without_current_picks_latest_normal ... ok
+test templating::tests::repeat_helper_does_not_leak_block_context ... ok
+
+failures:
+
+---- query::tests_lints::safe_function_requires_more_target_features stdout ----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot file: src/../test_outputs/query_execution/safe_function_requires_more_target_features.snap
+Snapshot: safe_function_requires_more_target_features
+Source: src/query.rs:876
+────────────────────────────────────────────────────────────────────────────────
+Expression: &query_execution_results
+────────────────────────────────────────────────────────────────────────────────
+-old snapshot
++new results
+────────────┬───────────────────────────────────────────────────────────────────
+    0       │-{
+    1       │-  "./test_crates/safe_function_requires_more_target_features/": [
+    2       │-    {
+    3       │-      "fn_name": String("safe_function"),
+    4       │-      "new_feature": String("avx2"),
+    5       │-      "path": List([
+    6       │-        String("safe_function_requires_more_target_features"),
+    7       │-        String("safe_function"),
+    8       │-      ]),
+    9       │-      "span_begin_line": Uint64(5),
+   10       │-      "span_end_line": Uint64(5),
+   11       │-      "span_filename": String("src/lib.rs"),
+   12       │-    },
+   13       │-    {
+   14       │-      "fn_name": String("replaced_with_broader_feature"),
+   15       │-      "new_feature": String("avx2"),
+   16       │-      "path": List([
+   17       │-        String("safe_function_requires_more_target_features"),
+   18       │-        String("replaced_with_broader_feature"),
+   19       │-      ]),
+   20       │-      "span_begin_line": Uint64(23),
+   21       │-      "span_end_line": Uint64(23),
+   22       │-      "span_filename": String("src/lib.rs"),
+   23       │-    },
+   24       │-  ],
+   25       │-  "./test_crates/unsafe_function_requires_more_target_features/": [
+   26       │-    {
+   27       │-      "fn_name": String("safe_function"),
+   28       │-      "new_feature": String("avx2"),
+   29       │-      "path": List([
+   30       │-        String("unsafe_function_requires_more_target_features"),
+   31       │-        String("safe_function"),
+   32       │-      ]),
+   33       │-      "span_begin_line": Uint64(15),
+   34       │-      "span_end_line": Uint64(15),
+   35       │-      "span_filename": String("src/lib.rs"),
+   36       │-    },
+   37       │-  ],
+   38       │-}
+          0 │+{}
+────────────┴───────────────────────────────────────────────────────────────────
+To update snapshots run `cargo insta review`
+Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+
+thread 'query::tests_lints::safe_function_requires_more_target_features' (171594) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/insta-1.43.1/src/runtime.rs:679:13:
+snapshot assertion for 'safe_function_requires_more_target_features' failed in line 876
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- query::tests_lints::safe_function_target_feature_added stdout ----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot file: src/../test_outputs/query_execution/safe_function_target_feature_added.snap
+Snapshot: safe_function_target_feature_added
+Source: src/query.rs:876
+────────────────────────────────────────────────────────────────────────────────
+Expression: &query_execution_results
+────────────────────────────────────────────────────────────────────────────────
+-old snapshot
++new results
+────────────┬───────────────────────────────────────────────────────────────────
+    0       │-{
+    1       │-  "./test_crates/safe_function_target_feature_added/": [
+    2       │-    {
+    3       │-      "feature": List([
+    4       │-        String("sse2"),
+    5       │-      ]),
+    6       │-      "name": String("compute"),
+    7       │-      "path": List([
+    8       │-        String("safe_function_target_feature_added"),
+    9       │-        String("compute"),
+   10       │-      ]),
+   11       │-      "span_begin_line": Uint64(10),
+   12       │-      "span_end_line": Uint64(12),
+   13       │-      "span_filename": String("src/lib.rs"),
+   14       │-      "visibility_limit": String("public"),
+   15       │-    },
+   16       │-  ],
+   17       │-}
+          0 │+{}
+────────────┴───────────────────────────────────────────────────────────────────
+To update snapshots run `cargo insta review`
+Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+
+thread 'query::tests_lints::safe_function_target_feature_added' (171600) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/insta-1.43.1/src/runtime.rs:679:13:
+snapshot assertion for 'safe_function_target_feature_added' failed in line 876
+
+---- query::tests_lints::safe_inherent_method_requires_more_target_features stdout ----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot file: src/../test_outputs/query_execution/safe_inherent_method_requires_more_target_features.snap
+Snapshot: safe_inherent_method_requires_more_target_features
+Source: src/query.rs:876
+────────────────────────────────────────────────────────────────────────────────
+Expression: &query_execution_results
+────────────────────────────────────────────────────────────────────────────────
+-old snapshot
++new results
+────────────┬───────────────────────────────────────────────────────────────────
+    0       │-{
+    1       │-  "./test_crates/safe_inherent_method_requires_more_target_features/": [
+    2       │-    {
+    3       │-      "method_name": String("safe_method"),
+    4       │-      "method_visibility": String("public"),
+    5       │-      "name": String("Foo"),
+    6       │-      "new_feature": String("avx2"),
+    7       │-      "path": List([
+    8       │-        String("safe_inherent_method_requires_more_target_features"),
+    9       │-        String("Foo"),
+   10       │-      ]),
+   11       │-      "span_begin_line": Uint64(9),
+   12       │-      "span_end_line": Uint64(9),
+   13       │-      "span_filename": String("src/lib.rs"),
+   14       │-    },
+   15       │-  ],
+   16       │-  "./test_crates/unsafe_inherent_method_requires_more_target_features/": [
+   17       │-    {
+   18       │-      "method_name": String("safe_method"),
+   19       │-      "method_visibility": String("public"),
+   20       │-      "name": String("Foo"),
+   21       │-      "new_feature": String("avx2"),
+   22       │-      "path": List([
+   23       │-        String("unsafe_inherent_method_requires_more_target_features"),
+   24       │-        String("Foo"),
+   25       │-      ]),
+   26       │-      "span_begin_line": Uint64(9),
+   27       │-      "span_end_line": Uint64(9),
+   28       │-      "span_filename": String("src/lib.rs"),
+   29       │-    },
+   30       │-  ],
+   31       │-}
+          0 │+{}
+────────────┴───────────────────────────────────────────────────────────────────
+To update snapshots run `cargo insta review`
+Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+
+thread 'query::tests_lints::safe_inherent_method_requires_more_target_features' (171606) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/insta-1.43.1/src/runtime.rs:679:13:
+snapshot assertion for 'safe_inherent_method_requires_more_target_features' failed in line 876
+
+---- query::tests_lints::safe_inherent_method_target_feature_added stdout ----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot file: src/../test_outputs/query_execution/safe_inherent_method_target_feature_added.snap
+Snapshot: safe_inherent_method_target_feature_added
+Source: src/query.rs:876
+────────────────────────────────────────────────────────────────────────────────
+Expression: &query_execution_results
+────────────────────────────────────────────────────────────────────────────────
+-old snapshot
++new results
+────────────┬───────────────────────────────────────────────────────────────────
+    0       │-{
+    1       │-  "./test_crates/safe_inherent_method_target_feature_added/": [
+    2       │-    {
+    3       │-      "method_name": String("safe_add_feature"),
+    4       │-      "method_visibility": String("public"),
+    5       │-      "name": String("Foo"),
+    6       │-      "new_required_feature_count": Uint64(1),
+    7       │-      "new_target_feature": List([
+    8       │-        String("sse2"),
+    9       │-      ]),
+   10       │-      "owner_type": String("Struct"),
+   11       │-      "path": List([
+   12       │-        String("safe_inherent_method_target_feature_added"),
+   13       │-        String("Foo"),
+   14       │-      ]),
+   15       │-      "span_begin_line": Uint64(15),
+   16       │-      "span_end_line": Uint64(15),
+   17       │-      "span_filename": String("src/lib.rs"),
+   18       │-      "visibility_limit": String("public"),
+   19       │-    },
+   20       │-  ],
+   21       │-  "./test_crates/unsafe_inherent_method_target_feature_added/": [
+   22       │-    {
+   23       │-      "method_name": String("safe"),
+   24       │-      "method_visibility": String("public"),
+   25       │-      "name": String("A"),
+   26       │-      "new_required_feature_count": Uint64(1),
+   27       │-      "new_target_feature": List([
+   28       │-        String("avx"),
+   29       │-      ]),
+   30       │-      "owner_type": String("Struct"),
+   31       │-      "path": List([
+   32       │-        String("unsafe_inherent_method_target_feature_added"),
+   33       │-        String("A"),
+   34       │-      ]),
+   35       │-      "span_begin_line": Uint64(20),
+   36       │-      "span_end_line": Uint64(20),
+   37       │-      "span_filename": String("src/lib.rs"),
+   38       │-      "visibility_limit": String("public"),
+   39       │-    },
+   40       │-  ],
+   41       │-}
+          0 │+{}
+────────────┴───────────────────────────────────────────────────────────────────
+To update snapshots run `cargo insta review`
+Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+
+thread 'query::tests_lints::safe_inherent_method_target_feature_added' (171612) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/insta-1.43.1/src/runtime.rs:679:13:
+snapshot assertion for 'safe_inherent_method_target_feature_added' failed in line 876
+
+---- query::tests_lints::trait_method_target_feature_removed stdout ----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot file: src/../test_outputs/query_execution/trait_method_target_feature_removed.snap
+Snapshot: trait_method_target_feature_removed
+Source: src/query.rs:876
+────────────────────────────────────────────────────────────────────────────────
+Expression: &query_execution_results
+────────────────────────────────────────────────────────────────────────────────
+-old snapshot
++new results
+────────────┬───────────────────────────────────────────────────────────────────
+   23    23 │       "span_filename": String("src/lib.rs"),
+   24    24 │       "visibility_limit": String("public"),
+   25    25 │     },
+   26    26 │     {
+         27 │+      "feature": String("avx"),
+         28 │+      "method_name": String("consolidated"),
+         29 │+      "path": List([
+         30 │+        String("trait_method_target_feature_removed"),
+         31 │+        String("TraitF"),
+         32 │+      ]),
+         33 │+      "span_begin_line": Uint64(39),
+         34 │+      "span_end_line": Uint64(39),
+         35 │+      "span_filename": String("src/lib.rs"),
+         36 │+      "visibility_limit": String("public"),
+         37 │+    },
+         38 │+    {
+         39 │+      "feature": String("sse2"),
+         40 │+      "method_name": String("remove_globally_enabled_feature"),
+         41 │+      "path": List([
+         42 │+        String("trait_method_target_feature_removed"),
+         43 │+        String("TraitC"),
+         44 │+      ]),
+         45 │+      "span_begin_line": Uint64(44),
+         46 │+      "span_end_line": Uint64(44),
+         47 │+      "span_filename": String("src/lib.rs"),
+         48 │+      "visibility_limit": String("public"),
+         49 │+    },
+         50 │+    {
+   27    51 │       "feature": String("bmi1"),
+   28    52 │       "method_name": String("feature_removed"),
+   29    53 │       "path": List([
+   30    54 │         String("trait_method_target_feature_removed"),
+────────────┴───────────────────────────────────────────────────────────────────
+To update snapshots run `cargo insta review`
+Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+
+thread 'query::tests_lints::trait_method_target_feature_removed' (171680) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/insta-1.43.1/src/runtime.rs:679:13:
+snapshot assertion for 'trait_method_target_feature_removed' failed in line 876
+
+---- query::tests_lints::unsafe_function_requires_more_target_features stdout ----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot file: src/../test_outputs/query_execution/unsafe_function_requires_more_target_features.snap
+Snapshot: unsafe_function_requires_more_target_features
+Source: src/query.rs:876
+────────────────────────────────────────────────────────────────────────────────
+Expression: &query_execution_results
+────────────────────────────────────────────────────────────────────────────────
+-old snapshot
++new results
+────────────┬───────────────────────────────────────────────────────────────────
+    0       │-{
+    1       │-  "./test_crates/unsafe_function_requires_more_target_features/": [
+    2       │-    {
+    3       │-      "currently_unsafe": Boolean(true),
+    4       │-      "fn_name": String("unsafe_function"),
+    5       │-      "new_feature": String("avx2"),
+    6       │-      "path": List([
+    7       │-        String("unsafe_function_requires_more_target_features"),
+    8       │-        String("unsafe_function"),
+    9       │-      ]),
+   10       │-      "span_begin_line": Uint64(20),
+   11       │-      "span_end_line": Uint64(20),
+   12       │-      "span_filename": String("src/lib.rs"),
+   13       │-    },
+   14       │-    {
+   15       │-      "currently_unsafe": Boolean(true),
+   16       │-      "fn_name": String("replaced_with_broader_feature"),
+   17       │-      "new_feature": String("avx2"),
+   18       │-      "path": List([
+   19       │-        String("unsafe_function_requires_more_target_features"),
+   20       │-        String("replaced_with_broader_feature"),
+   21       │-      ]),
+   22       │-      "span_begin_line": Uint64(45),
+   23       │-      "span_end_line": Uint64(45),
+   24       │-      "span_filename": String("src/lib.rs"),
+   25       │-    },
+   26       │-    {
+   27       │-      "currently_unsafe": Boolean(false),
+   28       │-      "fn_name": String("becomes_safe"),
+   29       │-      "new_feature": String("bmi2"),
+   30       │-      "path": List([
+   31       │-        String("unsafe_function_requires_more_target_features"),
+   32       │-        String("becomes_safe"),
+   33       │-      ]),
+   34       │-      "span_begin_line": Uint64(50),
+   35       │-      "span_end_line": Uint64(50),
+   36       │-      "span_filename": String("src/lib.rs"),
+   37       │-    },
+   38       │-  ],
+   39       │-}
+          0 │+{}
+────────────┴───────────────────────────────────────────────────────────────────
+To update snapshots run `cargo insta review`
+Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+
+thread 'query::tests_lints::unsafe_function_requires_more_target_features' (171746) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/insta-1.43.1/src/runtime.rs:679:13:
+snapshot assertion for 'unsafe_function_requires_more_target_features' failed in line 876
+
+---- query::tests_lints::unsafe_function_target_feature_added stdout ----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot file: src/../test_outputs/query_execution/unsafe_function_target_feature_added.snap
+Snapshot: unsafe_function_target_feature_added
+Source: src/query.rs:876
+────────────────────────────────────────────────────────────────────────────────
+Expression: &query_execution_results
+────────────────────────────────────────────────────────────────────────────────
+-old snapshot
++new results
+────────────┬───────────────────────────────────────────────────────────────────
+    0       │-{
+    1       │-  "./test_crates/unsafe_function_target_feature_added/": [
+    2       │-    {
+    3       │-      "currently_unsafe": Boolean(true),
+    4       │-      "feature": List([
+    5       │-        String("avx2"),
+    6       │-      ]),
+    7       │-      "fn_name": String("feature_added"),
+    8       │-      "path": List([
+    9       │-        String("unsafe_function_target_feature_added"),
+   10       │-        String("feature_added"),
+   11       │-      ]),
+   12       │-      "span_begin_line": Uint64(5),
+   13       │-      "span_end_line": Uint64(5),
+   14       │-      "span_filename": String("src/lib.rs"),
+   15       │-      "visibility_limit": String("public"),
+   16       │-    },
+   17       │-    {
+   18       │-      "currently_unsafe": Boolean(false),
+   19       │-      "feature": List([
+   20       │-        String("avx"),
+   21       │-      ]),
+   22       │-      "fn_name": String("becomes_safe"),
+   23       │-      "path": List([
+   24       │-        String("unsafe_function_target_feature_added"),
+   25       │-        String("becomes_safe"),
+   26       │-      ]),
+   27       │-      "span_begin_line": Uint64(22),
+   28       │-      "span_end_line": Uint64(22),
+   29       │-      "span_filename": String("src/lib.rs"),
+   30       │-      "visibility_limit": String("public"),
+   31       │-    },
+   32       │-  ],
+   33       │-}
+          0 │+{}
+────────────┴───────────────────────────────────────────────────────────────────
+To update snapshots run `cargo insta review`
+Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+
+thread 'query::tests_lints::unsafe_function_target_feature_added' (171763) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/insta-1.43.1/src/runtime.rs:679:13:
+snapshot assertion for 'unsafe_function_target_feature_added' failed in line 876
+
+---- query::tests_lints::unsafe_inherent_method_requires_more_target_features stdout ----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot file: src/../test_outputs/query_execution/unsafe_inherent_method_requires_more_target_features.snap
+Snapshot: unsafe_inherent_method_requires_more_target_features
+Source: src/query.rs:876
+────────────────────────────────────────────────────────────────────────────────
+Expression: &query_execution_results
+────────────────────────────────────────────────────────────────────────────────
+-old snapshot
++new results
+────────────┬───────────────────────────────────────────────────────────────────
+    0       │-{
+    1       │-  "./test_crates/safe_inherent_method_requires_more_target_features/": [
+    2       │-    {
+    3       │-      "currently_unsafe": Boolean(true),
+    4       │-      "method_name": String("unsafe_method"),
+    5       │-      "method_visibility": String("public"),
+    6       │-      "name": String("Foo"),
+    7       │-      "new_feature": String("avx2"),
+    8       │-      "path": List([
+    9       │-        String("safe_inherent_method_requires_more_target_features"),
+   10       │-        String("Foo"),
+   11       │-      ]),
+   12       │-      "span_begin_line": Uint64(14),
+   13       │-      "span_end_line": Uint64(14),
+   14       │-      "span_filename": String("src/lib.rs"),
+   15       │-    },
+   16       │-  ],
+   17       │-  "./test_crates/unsafe_inherent_method_requires_more_target_features/": [
+   18       │-    {
+   19       │-      "currently_unsafe": Boolean(true),
+   20       │-      "method_name": String("unsafe_method"),
+   21       │-      "method_visibility": String("public"),
+   22       │-      "name": String("Foo"),
+   23       │-      "new_feature": String("avx2"),
+   24       │-      "path": List([
+   25       │-        String("unsafe_inherent_method_requires_more_target_features"),
+   26       │-        String("Foo"),
+   27       │-      ]),
+   28       │-      "span_begin_line": Uint64(14),
+   29       │-      "span_end_line": Uint64(14),
+   30       │-      "span_filename": String("src/lib.rs"),
+   31       │-    },
+   32       │-    {
+   33       │-      "currently_unsafe": Boolean(false),
+   34       │-      "method_name": String("becomes_safe"),
+   35       │-      "method_visibility": String("public"),
+   36       │-      "name": String("Foo"),
+   37       │-      "new_feature": String("avx2"),
+   38       │-      "path": List([
+   39       │-        String("unsafe_inherent_method_requires_more_target_features"),
+   40       │-        String("Foo"),
+   41       │-      ]),
+   42       │-      "span_begin_line": Uint64(34),
+   43       │-      "span_end_line": Uint64(34),
+   44       │-      "span_filename": String("src/lib.rs"),
+   45       │-    },
+   46       │-  ],
+   47       │-}
+          0 │+{}
+────────────┴───────────────────────────────────────────────────────────────────
+To update snapshots run `cargo insta review`
+Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+
+thread 'query::tests_lints::unsafe_inherent_method_requires_more_target_features' (171769) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/insta-1.43.1/src/runtime.rs:679:13:
+snapshot assertion for 'unsafe_inherent_method_requires_more_target_features' failed in line 876
+
+---- query::tests_lints::unsafe_inherent_method_target_feature_added stdout ----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot file: src/../test_outputs/query_execution/unsafe_inherent_method_target_feature_added.snap
+Snapshot: unsafe_inherent_method_target_feature_added
+Source: src/query.rs:876
+────────────────────────────────────────────────────────────────────────────────
+Expression: &query_execution_results
+────────────────────────────────────────────────────────────────────────────────
+-old snapshot
++new results
+────────────┬───────────────────────────────────────────────────────────────────
+    0       │-{
+    1       │-  "./test_crates/unsafe_inherent_method_target_feature_added/": [
+    2       │-    {
+    3       │-      "currently_unsafe": Boolean(true),
+    4       │-      "feature_names": List([
+    5       │-        String("avx"),
+    6       │-      ]),
+    7       │-      "method_name": String("foo"),
+    8       │-      "method_visibility": String("public"),
+    9       │-      "name": String("A"),
+   10       │-      "path": List([
+   11       │-        String("unsafe_inherent_method_target_feature_added"),
+   12       │-        String("A"),
+   13       │-      ]),
+   14       │-      "span_begin_line": Uint64(8),
+   15       │-      "span_end_line": Uint64(8),
+   16       │-      "span_filename": String("src/lib.rs"),
+   17       │-      "visibility_limit": String("public"),
+   18       │-    },
+   19       │-    {
+   20       │-      "currently_unsafe": Boolean(false),
+   21       │-      "feature_names": List([
+   22       │-        String("avx"),
+   23       │-      ]),
+   24       │-      "method_name": String("becomes_safe"),
+   25       │-      "method_visibility": String("public"),
+   26       │-      "name": String("A"),
+   27       │-      "path": List([
+   28       │-        String("unsafe_inherent_method_target_feature_added"),
+   29       │-        String("A"),
+   30       │-      ]),
+   31       │-      "span_begin_line": Uint64(16),
+   32       │-      "span_end_line": Uint64(16),
+   33       │-      "span_filename": String("src/lib.rs"),
+   34       │-      "visibility_limit": String("public"),
+   35       │-    },
+   36       │-  ],
+   37       │-}
+          0 │+{}
+────────────┴───────────────────────────────────────────────────────────────────
+To update snapshots run `cargo insta review`
+Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+
+thread 'query::tests_lints::unsafe_inherent_method_target_feature_added' (171775) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/insta-1.43.1/src/runtime.rs:679:13:
+snapshot assertion for 'unsafe_inherent_method_target_feature_added' failed in line 876
+
+---- query::tests_lints::unsafe_trait_method_requires_more_target_features stdout ----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot file: src/../test_outputs/query_execution/unsafe_trait_method_requires_more_target_features.snap
+Snapshot: unsafe_trait_method_requires_more_target_features
+Source: src/query.rs:876
+────────────────────────────────────────────────────────────────────────────────
+Expression: &query_execution_results
+────────────────────────────────────────────────────────────────────────────────
+-old snapshot
++new results
+────────────┬───────────────────────────────────────────────────────────────────
+    0       │-{
+    1       │-  "./test_crates/unsafe_trait_method_requires_more_target_features/": [
+    2       │-    {
+    3       │-      "currently_unsafe": Boolean(true),
+    4       │-      "method_name": String("unsafe_method"),
+    5       │-      "name": String("TraitA"),
+    6       │-      "new_feature": String("avx2"),
+    7       │-      "path": List([
+    8       │-        String("unsafe_trait_method_requires_more_target_features"),
+    9       │-        String("TraitA"),
+   10       │-      ]),
+   11       │-      "span_begin_line": Uint64(10),
+   12       │-      "span_end_line": Uint64(10),
+   13       │-      "span_filename": String("src/lib.rs"),
+   14       │-    },
+   15       │-    {
+   16       │-      "currently_unsafe": Boolean(true),
+   17       │-      "method_name": String("sealed_trait_method"),
+   18       │-      "name": String("TraitSealed"),
+   19       │-      "new_feature": String("avx2"),
+   20       │-      "path": List([
+   21       │-        String("unsafe_trait_method_requires_more_target_features"),
+   22       │-        String("TraitSealed"),
+   23       │-      ]),
+   24       │-      "span_begin_line": Uint64(16),
+   25       │-      "span_end_line": Uint64(16),
+   26       │-      "span_filename": String("src/lib.rs"),
+   27       │-    },
+   28       │-  ],
+   29       │-}
+          0 │+{}
+────────────┴───────────────────────────────────────────────────────────────────
+To update snapshots run `cargo insta review`
+Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+
+thread 'query::tests_lints::unsafe_trait_method_requires_more_target_features' (171781) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/insta-1.43.1/src/runtime.rs:679:13:
+snapshot assertion for 'unsafe_trait_method_requires_more_target_features' failed in line 876
+
+---- query::tests_lints::unsafe_trait_method_target_feature_added stdout ----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot file: src/../test_outputs/query_execution/unsafe_trait_method_target_feature_added.snap
+Snapshot: unsafe_trait_method_target_feature_added
+Source: src/query.rs:876
+────────────────────────────────────────────────────────────────────────────────
+Expression: &query_execution_results
+────────────────────────────────────────────────────────────────────────────────
+-old snapshot
++new results
+────────────┬───────────────────────────────────────────────────────────────────
+    0       │-{
+    1       │-  "./test_crates/unsafe_trait_method_target_feature_added/": [
+    2       │-    {
+    3       │-      "currently_unsafe": Boolean(true),
+    4       │-      "feature": List([
+    5       │-        String("avx2"),
+    6       │-      ]),
+    7       │-      "method_name": String("feature_added"),
+    8       │-      "path": List([
+    9       │-        String("unsafe_trait_method_target_feature_added"),
+   10       │-        String("TraitA"),
+   11       │-      ]),
+   12       │-      "span_begin_line": Uint64(9),
+   13       │-      "span_end_line": Uint64(9),
+   14       │-      "span_filename": String("src/lib.rs"),
+   15       │-      "visibility_limit": String("public"),
+   16       │-    },
+   17       │-    {
+   18       │-      "currently_unsafe": Boolean(true),
+   19       │-      "feature": List([
+   20       │-        String("avx2"),
+   21       │-      ]),
+   22       │-      "method_name": String("sealed_trait_method_feature_added"),
+   23       │-      "path": List([
+   24       │-        String("unsafe_trait_method_target_feature_added"),
+   25       │-        String("TraitD"),
+   26       │-      ]),
+   27       │-      "span_begin_line": Uint64(24),
+   28       │-      "span_end_line": Uint64(24),
+   29       │-      "span_filename": String("src/lib.rs"),
+   30       │-      "visibility_limit": String("public"),
+   31       │-    },
+   32       │-  ],
+   33       │-}
+          0 │+{}
+────────────┴───────────────────────────────────────────────────────────────────
+To update snapshots run `cargo insta review`
+Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+
+thread 'query::tests_lints::unsafe_trait_method_target_feature_added' (171784) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/insta-1.43.1/src/runtime.rs:679:13:
+snapshot assertion for 'unsafe_trait_method_target_feature_added' failed in line 876
+
+
+failures:
+    query::tests_lints::safe_function_requires_more_target_features
+    query::tests_lints::safe_function_target_feature_added
+    query::tests_lints::safe_inherent_method_requires_more_target_features
+    query::tests_lints::safe_inherent_method_target_feature_added
+    query::tests_lints::trait_method_target_feature_removed
+    query::tests_lints::unsafe_function_requires_more_target_features
+    query::tests_lints::unsafe_function_target_feature_added
+    query::tests_lints::unsafe_inherent_method_requires_more_target_features
+    query::tests_lints::unsafe_inherent_method_target_feature_added
+    query::tests_lints::unsafe_trait_method_requires_more_target_features
+    query::tests_lints::unsafe_trait_method_target_feature_added
+
+test result: FAILED. 213 passed; 11 failed; 0 ignored; 0 measured; 0 filtered out; finished in 45.21s
+
+error: test failed, to rerun pass `--lib`
